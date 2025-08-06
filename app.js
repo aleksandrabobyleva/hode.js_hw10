@@ -9,7 +9,7 @@ const app = express();
 app.use(express.json());
 dotenv.config();
 const port = process.env.PORT || 3000;
-const secretKey = process.env.SECRET_KEY || "your_jwt_secret_key";
+const secretKey = process.env.SECRET_KEY || "jwt_secret_key";
 
 app.get("/", (req, res) => {
   res.send("Home Page");
